@@ -6,7 +6,7 @@ Omnigraffle Wireframing Kit helps to organize your wireframes into a slick prese
 Demo
 ----
 
-Go to [http://netboy.pl/omnigraffle-wireframing-kit](http://netboy.pl/demo/omnigraffle-wireframing-kit) for a demo.
+Go to [http://netboy.pl/demo/omnigraffle-wireframing-kit](http://netboy.pl/demo/omnigraffle-wireframing-kit) for a demo.
 
 Installation
 ------------
