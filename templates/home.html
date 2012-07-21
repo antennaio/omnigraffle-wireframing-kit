@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>{{ project_title }}</h1>
+
+<p><img src="{{ url_for('static', filename='img/browsers.png') }}" width="300" height="80" alt="Chrome, Firefox, Safari, Explorer" /></p>
+<p>The interactive wireframes are compatible with Chrome 11+, Firefox 4+, Safari 5+ and Internet Explorer 9+.</p>
+<p>Please view the wireframes in a minimum resolution of 1280x800px for best results.</p>
+<br />
+
+<p><a href="{{ initial_wireframe }}" class="button">Let's start!</a></p>
+{% endblock %}

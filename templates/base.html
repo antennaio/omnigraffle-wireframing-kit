@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>{{ project_title }}</title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+	<script src="{{ url_for('static', filename='js/libs/modernizr-2.5.3.min.js') }}"></script>
+</head>
+<body>
+<!--[if lt IE 9]><p class=chromeframe><em>Your browser is not supported!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this presentation.</p><![endif]-->
+
+<header id="header">
+	<h1><a href="/">{{ project_title }}</a></h1>
+	<nav class="devices">
+		<ul>
+            {% for device in devices %}
+            <li><a href="{{ device.url }}"{% if device.active %} class="active"{% endif %}>{{ device.title|safe }}</a></li>
+            {% endfor %}
+        </ul>
+	</nav>
+</header>
+
+<div id="sidebar">
+	<div id="dragbar"></div>
+	<nav class="menu">
+		<ol>
+			{% for wireframe in wireframes %}
+            <li><a href="{{ wireframe.url }}"{% if wireframe.active %} class="active"{% endif %}>{{ wireframe.title|safe }}</a></li>
+			{% endfor %}
+		</ol>
+	</nav>
+</div>
+<div id="main" role="main">
+	{% block body %}{% endblock %}
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ url_for('static', filename='js/libs/jquery-1.7.2.min.js') }}"><\/script>')</script>
+
+<script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
