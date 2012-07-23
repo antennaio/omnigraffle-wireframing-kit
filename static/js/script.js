@@ -23,7 +23,7 @@ $(window).load(function() {
 		$(document).unbind('mousemove');
 	});
 
-	$(window).resize(function() { 
-		fixHeight('#dragbar, #sidebar');
-	});	
+    $(window).on("debouncedresize", function(e) {
+        fixHeight('#dragbar, #sidebar');
+    });
 });
