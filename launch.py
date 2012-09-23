@@ -35,6 +35,11 @@ if not result:
     exit(1)
 
 
+def format_filename(device, orientation, id='1'):
+    """Format a file name."""
+    return id + '-' + device + '-' + orientation + '.html'
+
+
 def wireframes(active_id=0):
     """Make a list of dictionaries with all wireframes."""
     wireframes = []
@@ -47,7 +52,7 @@ def wireframes(active_id=0):
 
         data = {
             'title': w['title'],
-            'url': str(wireframe_id) + '-' + d['device'] + '-' + d['orientation'] + '.html'
+            'url': format_filename(d['device'], d['orientation'], str(wireframe_id))
         }
 
         if active_id == wireframe_id:
@@ -60,15 +65,17 @@ def wireframes(active_id=0):
 
 @app.context_processor
 def project_title():
+    """Project title available in templates."""
     return dict(project_title=config['General']['project'])
 
 
 @app.context_processor
 def initial_wireframe():
+    """Initial wireframe available in templates."""
     w = config['Wireframes']['Wireframe 1']
     show_on_device = w['show_on_device']
     d = config['Devices']['Device ' + str(show_on_device)]
-    return dict(initial_wireframe='1-' + d['device'] + '-' + d['orientation'] + '.html')
+    return dict(initial_wireframe=format_filename(device=d['device'], orientation=d['orientation']))
 
 
 @app.route('/', methods=['GET'])
@@ -80,13 +87,14 @@ def home():
 def show(wireframe_id, device, orientation):
     # open wireframe exported from Omnigraffle
     path = 'static' + os.sep + omnigraffle_folder + os.sep + device + '-' + orientation
-    wireframe_filename = str(wireframe_id) + '-' + device + '-' + orientation + '.html'
+    wireframe_filename = format_filename(device, orientation, str(wireframe_id))
 
     try:
         f = open(os.path.join(path, wireframe_filename), "r")
     except IOError:
         return render_template('not_found.html', wireframes=wireframes())
 
+    # fix img src
     file_content = re.sub(r'src=\"', 'src="%s/' % path, f.read())
 
 
@@ -98,7 +106,7 @@ def show(wireframe_id, device, orientation):
         d = config['Devices']['Device ' + str(device_id)]
 
         path = 'static' + os.sep + omnigraffle_folder + os.sep + d['device'] + '-' + d['orientation']
-        device_filename = str(wireframe_id) + '-' + d['device'] + '-' + d['orientation'] + '.html'
+        device_filename = format_filename(d['device'], d['orientation'], str(wireframe_id))
 
         if os.path.isfile(os.path.join(path, device_filename)):
             data = {
