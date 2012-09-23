@@ -38,4 +38,5 @@ Exporting wireframes from Omnigraffle
 -------------------------------------
 
 Open Omnigraffle files from the "static/omnigraffle/" folder to edit the wireframes. When ready
-go to "File > Export...", select "HTML image map" format and confirm with "Save".
+go to "File > Export...". Select "HTML image map" format. Select "Entire Document" in the "Export Area" menu.
+Confirm with "Save".
