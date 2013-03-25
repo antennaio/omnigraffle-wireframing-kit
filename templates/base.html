@@ -20,8 +20,8 @@
 	<h1><a href="/">{{ project_title }}</a></h1>
 	<nav class="devices">
 		<ul>
-            {% for device in devices %}
-            <li><a href="{{ device.url }}"{% if device.active %} class="active"{% endif %}>{{ device.title|safe }}</a></li>
+            {% for device in devices %} 
+            <li><a href="{{ device.url() }}"{% if devices.active_id == device.id %} class="active"{% endif %}>{{ device.title|safe }}</a></li>
             {% endfor %}
         </ul>
 	</nav>
@@ -32,7 +32,7 @@
 	<nav class="menu">
 		<ol>
 			{% for wireframe in wireframes %}
-            <li><a href="{{ wireframe.url }}"{% if wireframe.active %} class="active"{% endif %}>{{ wireframe.title|safe }}</a></li>
+            <li><a href="{{ wireframe.url() }}"{% if wireframes.active_id == wireframe.id %} class="active"{% endif %}>{{ wireframe.title|safe }}</a></li>
 			{% endfor %}
 		</ol>
 	</nav>
