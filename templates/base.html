@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=1280" />
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 	<script src="{{ url_for('static', filename='js/libs/modernizr-2.5.3.min.js') }}"></script>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!--[if lt IE 9]><p class=chromeframe><em>Your browser is not supported!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this presentation.</p><![endif]-->
@@ -21,7 +22,9 @@
 	<nav class="devices">
 		<ul>
             {% for device in devices %} 
-            <li><a href="{{ device.url() }}"{% if devices.active_id == device.id %} class="active"{% endif %}>{{ device.title|safe }}</a></li>
+            <li>
+            	<a href="{{ device.url() }}"{% if devices.active_id == device.id %} class="active"{% endif %}>{{ device.title|safe }}</a>
+           	</li>
             {% endfor %}
         </ul>
 	</nav>
@@ -30,11 +33,13 @@
 <div id="sidebar">
 	<div id="dragbar"></div>
 	<nav class="menu">
-		<ol>
+		<ul>
 			{% for wireframe in wireframes %}
-            <li><a href="{{ wireframe.url() }}"{% if wireframes.active_id == wireframe.id %} class="active"{% endif %}>{{ wireframe.title|safe }}</a></li>
+            <li><a href="{{ wireframe.url() }}"{% if wireframes.active_id == wireframe.id %} class="active"{% endif %}>
+            	{{ wireframe.id|safe }}. {{ wireframe.title|safe }}</a>
+            </li>
 			{% endfor %}
-		</ol>
+		</ul>
 	</nav>
 </div>
 <div id="main" role="main">

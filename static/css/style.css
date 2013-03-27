@@ -79,37 +79,37 @@ body, html {
 	height: 100%;
 	padding: 0;
 	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
 	color: #484e58;
 }
 
-a { color: #727986; text-decoration: none; }
-a:visited { color: #727986; }
+a { color: #90949c; text-decoration: none; }
+a:visited { color: #90949c; }
 a:hover { color: #484e58; text-decoration: none; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 
 h1 {
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 h2 {
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 h3 {
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 a.button {
 	background-color: #ecf0f6;
 	padding: 15px 40px 15px 40px;
 	margin-left: 5px;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 18px;
 	border: 2px solid #dce2eb;
 
@@ -117,6 +117,10 @@ a.button {
 	-moz-transition: background-color .1s ease-in;  
 	-o-transition: background-color .1s ease-in;  
 	transition: background-color .1s ease-in;	
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
 }
 
 a.button:hover {
@@ -124,23 +128,21 @@ a.button:hover {
 }
 
 #header {
-	background-color: #484e58;
+	background-color: #344151;
 	width: 100%;
-	height: 50px;
+	height: 60px;
 	color: white;
-
-	-moz-box-shadow: inset 0 -5px 10px #333537;
-	-webkit-box-shadow: inset 0 -5px 10px #333537;
-	box-shadow: inset 0 -5px 10px #333537;	
+	position: fixed;
 }
 
 #header h1 {
-	font-size: 18px;
-	font-weight: bold;
+	font-size: 20px;
+	font-weight: 400;
 	margin: 0;
-	padding: 0 0 0 15px;
-	line-height: 2.5;
+	padding: 0 0 0 22px;
+	line-height: 3;
 	float: left;
+	position: fixed;
 }
 
 #header h1 a {
@@ -156,14 +158,13 @@ a.button:hover {
 }
 
 #header .devices ul li a {
-	background-color: #5c6371;
-	color: white;
-	padding: 11px 50px 0 12px;
-	height: 39px;
-	line-height: 1;
+	color: #90949c;
+	padding: 14px 50px 0 12px;
+	height: 46px;
+	line-height: 1.2;
 	display: block;
 	float: left;
-	font-weight: bold;
+	font-weight: 700;
 
 	-webkit-transition: background-color .1s ease-in;  
 	-moz-transition: background-color .1s ease-in;  
@@ -172,40 +173,48 @@ a.button:hover {
 }
 
 #header .devices small {
-	font-weight: normal;
+	font-weight: 400;
 }
 
 #header .devices ul li a:hover {
-	background-color: #727986;
+	background-color: #435265;
+	color: white;
 }
 
 #header .devices ul li a.active {
-	background-color: #d9dfe8;
-	color: #484e58;
+	background-color: #6081a9;
+	color: white;
 }
 
 #main {
 	background-color: white;
 	text-align: center;
 	margin: auto;
-	padding: 30px 10px 30px 10px;
+	padding: 90px 10px 30px 10px;
 	white-space: nowrap;
 }
 
 #main h1 {
 	font-size: 36px;
 	margin: 50px 0 50px 0;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 #sidebar {
-	background-color: #ecf0f6;
-	width: 280px;
-	float: left;
+	width: 330px;
+	position: fixed;
+	margin-top: 60px;
+	display: none;
+
+	-webkit-transition: left .1s ease-in;  
+	-moz-transition: left .1s ease-in;  
+	-o-transition: left .1s ease-in;  
+	transition: left .1s ease-in;	
 }
 
 #sidebar .menu {
-	padding: 15px 25px 15px 15px;
+	width: 300px;
+	background-color: #344151;
 }
 
 #sidebar .menu a {
@@ -217,58 +226,56 @@ a.button:hover {
 	transition: color .1s ease-in;	
 }
 
-#sidebar .menu ol {
-	padding: 0 0 0 20px;
-	margin: 0 0 5px 0;
+#sidebar .menu ul {
 	color: #90949c;
 	font-style: italic;
-	list-style-type: decimal;
 }
 
-#sidebar .menu ol li {
-	margin: 4px 0 4px 0;
-
-}
-
-#sidebar .menu ol li a {
-	padding: 4px 10px 4px 0;
-	font-weight: bold;
+#sidebar .menu ul li a {
+	padding: 12px 10px;
+	font-weight: 400;
 	font-style: normal;
 	color: #90949c;
-
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;	
 }
 
-#sidebar .menu ol li a:hover {
-	color: #484e58;
+#sidebar .menu ul li a:hover {
+	background-color: #435265;
+	color: white;
 }
 
-#sidebar .menu ol li a.active {
-	color: #484e58;
+#sidebar .menu ul li a.active {
+	background-color: #6081a9;
+	color: white;
 }
 
-#sidebar .menu ol li a.active:hover {
-	color: #484e58;
+#sidebar .menu ul li a.active:hover {
+	color: white;
 }
 
-#sidebar .menu ol ol {
-	padding: 0 0 0 20px;
-	margin: 0 0 5px 0;
+#sidebar .menu ul ul {
 	list-style-type: lower-alpha;
 }
 
-#sidebar .menu ol ol li a {
-	font-weight: normal;
+#sidebar .menu ul ul li a {
+	font-weight: 400;
 }
 
 #dragbar {
-	background-color: #dce2eb;
+	background: transparent url('../img/sidebar-hide.png') no-repeat;
+	background-position: center center;
 	height: 100%;
 	float: right;
-	width: 8px;
-	cursor: col-resize;
+	width: 30px;
+}
+
+#dragbar.dragbar-hidden {
+	background: transparent url('../img/sidebar-show.png') no-repeat;
+	background-position: center center;
+}
+
+#dragbar:hover {
+	background-color: rgba(96, 129, 169, .15);
+	cursor: pointer;
 }
 
 /* =============================================================================

@@ -8,7 +8,7 @@
 		<string>138.33.0.157554</string>
 	</array>
 	<key>CreationDate</key>
-	<string>2012-06-22 11:50:41 +0200</string>
+	<string>2012-06-22 09:50:41 +0000</string>
 	<key>Creator</key>
 	<string>Kazik</string>
 	<key>GraphDocumentVersion</key>
@@ -74,7 +74,7 @@
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{18, 18}, {1025, 768}}</string>
+					<string>{{18, 18}, {1024, 768}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -154,9 +154,9 @@
 		</dict>
 	</array>
 	<key>ModificationDate</key>
-	<string>2012-07-18 18:31:36 +0200</string>
+	<string>2013-03-26 11:35:18 +0000</string>
 	<key>Modifier</key>
-	<string>Kazik</string>
+	<string>Kazik Pietruszewski</string>
 	<key>NotesVisible</key>
 	<string>NO</string>
 	<key>OriginVisible</key>
@@ -170,15 +170,30 @@
 			<string>float</string>
 			<string>41</string>
 		</array>
+		<key>NSHorizonalPagination</key>
+		<array>
+			<string>int</string>
+			<string>0</string>
+		</array>
 		<key>NSLeftMargin</key>
 		<array>
 			<string>float</string>
 			<string>18</string>
 		</array>
+		<key>NSPaperName</key>
+		<array>
+			<string>string</string>
+			<string>na-letter</string>
+		</array>
 		<key>NSPaperSize</key>
 		<array>
 			<string>coded</string>
 			<string>BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU1ZhbHVlAISECE5TT2JqZWN0AIWEASqEhAx7X05TU2l6ZT1mZn2WgWQCgRgDhg==</string>
+		</array>
+		<key>NSPrintReverseOrientation</key>
+		<array>
+			<string>int</string>
+			<string>0</string>
 		</array>
 		<key>NSRightMargin</key>
 		<array>
@@ -208,7 +223,7 @@
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {1324, 860}}</string>
+				<string>{{0, 0}, {1324, 859}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>ID</key>
@@ -230,7 +245,7 @@
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>CanvasSize</key>
-			<string>{1324, 860}</string>
+			<string>{1324, 859}</string>
 			<key>ColumnAlign</key>
 			<integer>1</integer>
 			<key>ColumnSpacing</key>
@@ -241,11 +256,27 @@
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{18, 18}, {1024, 768}}</string>
+					<string>{{132, 179}, {150, 150}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
+					<key>FontInfo</key>
+					<dict>
+						<key>Color</key>
+						<dict>
+							<key>b</key>
+							<string>0.662745</string>
+							<key>g</key>
+							<string>0.505882</string>
+							<key>r</key>
+							<string>0.376471</string>
+						</dict>
+						<key>Font</key>
+						<string>OpenSans-Bold</string>
+						<key>Size</key>
+						<real>12</real>
+					</dict>
 					<key>ID</key>
-					<integer>4</integer>
+					<integer>7</integer>
 					<key>Link</key>
 					<dict>
 						<key>documentJump</key>
@@ -257,7 +288,7 @@
 						</dict>
 					</dict>
 					<key>Shape</key>
-					<string>Rectangle</string>
+					<string>Circle</string>
 					<key>Style</key>
 					<dict>
 						<key>fill</key>
@@ -265,13 +296,13 @@
 							<key>Color</key>
 							<dict>
 								<key>a</key>
-								<string>0</string>
+								<string>0.15</string>
 								<key>b</key>
-								<string>1</string>
+								<string>0.662745</string>
 								<key>g</key>
-								<string>1</string>
+								<string>0.505882</string>
 								<key>r</key>
-								<string>1</string>
+								<string>0.376471</string>
 							</dict>
 						</dict>
 						<key>shadow</key>
@@ -285,10 +316,21 @@
 							<string>NO</string>
 						</dict>
 					</dict>
+					<key>Text</key>
+					<dict>
+						<key>Text</key>
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 OpenSans;}
+{\colortbl;\red255\green255\blue255;\red96\green129\blue169;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\b\fs24 \cf2 Jump to\
+Wireframe 2}</string>
+					</dict>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{633, 691}, {338, 29}}</string>
+					<string>{{832, 691}, {139, 34}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -300,14 +342,14 @@
 						<key>Color</key>
 						<dict>
 							<key>b</key>
-							<string>0.345098</string>
+							<string>0.317647</string>
 							<key>g</key>
-							<string>0.305882</string>
+							<string>0.254902</string>
 							<key>r</key>
-							<string>0.282353</string>
+							<string>0.203922</string>
 						</dict>
 						<key>Font</key>
-						<string>Helvetica-Bold</string>
+						<string>OpenSans-Bold</string>
 						<key>NSKern</key>
 						<real>0.0</real>
 						<key>Size</key>
@@ -340,13 +382,13 @@
 						<key>Pad</key>
 						<integer>0</integer>
 						<key>Text</key>
-						<string>{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red72\green78\blue88;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 OpenSans;}
+{\colortbl;\red255\green255\blue255;\red52\green65\blue81;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\b\fs48 \cf2 \expnd0\expndtw0\kerning0
-Desktop exported at 85% size}</string>
+1024x768px}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -355,7 +397,7 @@ Desktop exported at 85% size}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{489.5, 315.5}, {81, 173}}</string>
+					<string>{{489.5, 306.5}, {83, 197}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -367,14 +409,14 @@ Desktop exported at 85% size}</string>
 						<key>Color</key>
 						<dict>
 							<key>b</key>
-							<string>0.345098</string>
+							<string>0.317647</string>
 							<key>g</key>
-							<string>0.305882</string>
+							<string>0.254902</string>
 							<key>r</key>
-							<string>0.282353</string>
+							<string>0.203922</string>
 						</dict>
 						<key>Font</key>
-						<string>Helvetica-Bold</string>
+						<string>OpenSans-Bold</string>
 						<key>NSKern</key>
 						<real>0.0</real>
 						<key>Size</key>
@@ -407,10 +449,10 @@ Desktop exported at 85% size}</string>
 						<key>Pad</key>
 						<integer>0</integer>
 						<key>Text</key>
-						<string>{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red72\green78\blue88;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 OpenSans;}
+{\colortbl;\red255\green255\blue255;\red52\green65\blue81;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\b\fs288 \cf2 \expnd0\expndtw0\kerning0
 1}</string>
@@ -485,7 +527,7 @@ Desktop exported at 85% size}</string>
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {1324, 860}}</string>
+				<string>{{0, 0}, {1324, 859}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>ID</key>
@@ -507,7 +549,7 @@ Desktop exported at 85% size}</string>
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>CanvasSize</key>
-			<string>{1324, 860}</string>
+			<string>{1324, 859}</string>
 			<key>ColumnAlign</key>
 			<integer>1</integer>
 			<key>ColumnSpacing</key>
@@ -518,54 +560,7 @@ Desktop exported at 85% size}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{18, 18}, {1024, 768}}</string>
-					<key>Class</key>
-					<string>ShapedGraphic</string>
-					<key>ID</key>
-					<integer>4</integer>
-					<key>Link</key>
-					<dict>
-						<key>documentJump</key>
-						<dict>
-							<key>Type</key>
-							<integer>6</integer>
-							<key>Worksheet</key>
-							<integer>2</integer>
-						</dict>
-					</dict>
-					<key>Shape</key>
-					<string>Rectangle</string>
-					<key>Style</key>
-					<dict>
-						<key>fill</key>
-						<dict>
-							<key>Color</key>
-							<dict>
-								<key>a</key>
-								<string>0</string>
-								<key>b</key>
-								<string>1</string>
-								<key>g</key>
-								<string>1</string>
-								<key>r</key>
-								<string>1</string>
-							</dict>
-						</dict>
-						<key>shadow</key>
-						<dict>
-							<key>Draws</key>
-							<string>NO</string>
-						</dict>
-						<key>stroke</key>
-						<dict>
-							<key>Draws</key>
-							<string>NO</string>
-						</dict>
-					</dict>
-				</dict>
-				<dict>
-					<key>Bounds</key>
-					<string>{{633, 691}, {338, 29}}</string>
+					<string>{{832, 691}, {139, 34}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -577,14 +572,14 @@ Desktop exported at 85% size}</string>
 						<key>Color</key>
 						<dict>
 							<key>b</key>
-							<string>0.345098</string>
+							<string>0.317647</string>
 							<key>g</key>
-							<string>0.305882</string>
+							<string>0.254902</string>
 							<key>r</key>
-							<string>0.282353</string>
+							<string>0.203922</string>
 						</dict>
 						<key>Font</key>
-						<string>Helvetica-Bold</string>
+						<string>OpenSans-Bold</string>
 						<key>NSKern</key>
 						<real>0.0</real>
 						<key>Size</key>
@@ -617,13 +612,13 @@ Desktop exported at 85% size}</string>
 						<key>Pad</key>
 						<integer>0</integer>
 						<key>Text</key>
-						<string>{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red72\green78\blue88;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 OpenSans;}
+{\colortbl;\red255\green255\blue255;\red52\green65\blue81;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\b\fs48 \cf2 \expnd0\expndtw0\kerning0
-Desktop exported at 85% size}</string>
+1024x768px}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -632,7 +627,7 @@ Desktop exported at 85% size}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{489.5, 315.5}, {81, 173}}</string>
+					<string>{{489.5, 306.5}, {83, 197}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -644,14 +639,14 @@ Desktop exported at 85% size}</string>
 						<key>Color</key>
 						<dict>
 							<key>b</key>
-							<string>0.345098</string>
+							<string>0.317647</string>
 							<key>g</key>
-							<string>0.305882</string>
+							<string>0.254902</string>
 							<key>r</key>
-							<string>0.282353</string>
+							<string>0.203922</string>
 						</dict>
 						<key>Font</key>
-						<string>Helvetica-Bold</string>
+						<string>OpenSans-Bold</string>
 						<key>NSKern</key>
 						<real>0.0</real>
 						<key>Size</key>
@@ -684,10 +679,10 @@ Desktop exported at 85% size}</string>
 						<key>Pad</key>
 						<integer>0</integer>
 						<key>Text</key>
-						<string>{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red72\green78\blue88;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 OpenSans;}
+{\colortbl;\red255\green255\blue255;\red52\green65\blue81;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\b\fs288 \cf2 \expnd0\expndtw0\kerning0
 2}</string>
@@ -696,6 +691,80 @@ Desktop exported at 85% size}</string>
 					</dict>
 					<key>Wrap</key>
 					<string>NO</string>
+				</dict>
+				<dict>
+					<key>Bounds</key>
+					<string>{{718, 395}, {150, 150}}</string>
+					<key>Class</key>
+					<string>ShapedGraphic</string>
+					<key>FontInfo</key>
+					<dict>
+						<key>Color</key>
+						<dict>
+							<key>b</key>
+							<string>0.662745</string>
+							<key>g</key>
+							<string>0.505882</string>
+							<key>r</key>
+							<string>0.376471</string>
+						</dict>
+						<key>Font</key>
+						<string>OpenSans-Bold</string>
+						<key>Size</key>
+						<real>12</real>
+					</dict>
+					<key>ID</key>
+					<integer>7</integer>
+					<key>Link</key>
+					<dict>
+						<key>documentJump</key>
+						<dict>
+							<key>Type</key>
+							<integer>6</integer>
+							<key>Worksheet</key>
+							<integer>2</integer>
+						</dict>
+					</dict>
+					<key>Shape</key>
+					<string>Circle</string>
+					<key>Style</key>
+					<dict>
+						<key>fill</key>
+						<dict>
+							<key>Color</key>
+							<dict>
+								<key>a</key>
+								<string>0.15</string>
+								<key>b</key>
+								<string>0.662745</string>
+								<key>g</key>
+								<string>0.505882</string>
+								<key>r</key>
+								<string>0.376471</string>
+							</dict>
+						</dict>
+						<key>shadow</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+						<key>stroke</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+					</dict>
+					<key>Text</key>
+					<dict>
+						<key>Text</key>
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 OpenSans;}
+{\colortbl;\red255\green255\blue255;\red96\green129\blue169;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\b\fs24 \cf2 Jump to\
+Wireframe 3}</string>
+					</dict>
 				</dict>
 			</array>
 			<key>GridInfo</key>
@@ -762,7 +831,7 @@ Desktop exported at 85% size}</string>
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {1324, 860}}</string>
+				<string>{{0, 0}, {1324, 859}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>ID</key>
@@ -784,7 +853,7 @@ Desktop exported at 85% size}</string>
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
 			<key>CanvasSize</key>
-			<string>{1324, 860}</string>
+			<string>{1324, 859}</string>
 			<key>ColumnAlign</key>
 			<integer>1</integer>
 			<key>ColumnSpacing</key>
@@ -795,54 +864,7 @@ Desktop exported at 85% size}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{18, 18}, {1024, 768}}</string>
-					<key>Class</key>
-					<string>ShapedGraphic</string>
-					<key>ID</key>
-					<integer>4</integer>
-					<key>Link</key>
-					<dict>
-						<key>documentJump</key>
-						<dict>
-							<key>Type</key>
-							<integer>6</integer>
-							<key>Worksheet</key>
-							<integer>0</integer>
-						</dict>
-					</dict>
-					<key>Shape</key>
-					<string>Rectangle</string>
-					<key>Style</key>
-					<dict>
-						<key>fill</key>
-						<dict>
-							<key>Color</key>
-							<dict>
-								<key>a</key>
-								<string>0</string>
-								<key>b</key>
-								<string>1</string>
-								<key>g</key>
-								<string>1</string>
-								<key>r</key>
-								<string>1</string>
-							</dict>
-						</dict>
-						<key>shadow</key>
-						<dict>
-							<key>Draws</key>
-							<string>NO</string>
-						</dict>
-						<key>stroke</key>
-						<dict>
-							<key>Draws</key>
-							<string>NO</string>
-						</dict>
-					</dict>
-				</dict>
-				<dict>
-					<key>Bounds</key>
-					<string>{{633, 691}, {338, 29}}</string>
+					<string>{{832, 691}, {139, 34}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -854,14 +876,14 @@ Desktop exported at 85% size}</string>
 						<key>Color</key>
 						<dict>
 							<key>b</key>
-							<string>0.345098</string>
+							<string>0.317647</string>
 							<key>g</key>
-							<string>0.305882</string>
+							<string>0.254902</string>
 							<key>r</key>
-							<string>0.282353</string>
+							<string>0.203922</string>
 						</dict>
 						<key>Font</key>
-						<string>Helvetica-Bold</string>
+						<string>OpenSans-Bold</string>
 						<key>NSKern</key>
 						<real>0.0</real>
 						<key>Size</key>
@@ -894,13 +916,13 @@ Desktop exported at 85% size}</string>
 						<key>Pad</key>
 						<integer>0</integer>
 						<key>Text</key>
-						<string>{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red72\green78\blue88;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 OpenSans;}
+{\colortbl;\red255\green255\blue255;\red52\green65\blue81;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\b\fs48 \cf2 \expnd0\expndtw0\kerning0
-Desktop exported at 85% size}</string>
+1024x768px}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -909,7 +931,7 @@ Desktop exported at 85% size}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{489.5, 315.5}, {81, 173}}</string>
+					<string>{{489.5, 306.5}, {83, 197}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -921,14 +943,14 @@ Desktop exported at 85% size}</string>
 						<key>Color</key>
 						<dict>
 							<key>b</key>
-							<string>0.345098</string>
+							<string>0.317647</string>
 							<key>g</key>
-							<string>0.305882</string>
+							<string>0.254902</string>
 							<key>r</key>
-							<string>0.282353</string>
+							<string>0.203922</string>
 						</dict>
 						<key>Font</key>
-						<string>Helvetica-Bold</string>
+						<string>OpenSans-Bold</string>
 						<key>NSKern</key>
 						<real>0.0</real>
 						<key>Size</key>
@@ -961,10 +983,10 @@ Desktop exported at 85% size}</string>
 						<key>Pad</key>
 						<integer>0</integer>
 						<key>Text</key>
-						<string>{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red72\green78\blue88;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 OpenSans;}
+{\colortbl;\red255\green255\blue255;\red52\green65\blue81;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\b\fs288 \cf2 \expnd0\expndtw0\kerning0
 3}</string>
@@ -973,6 +995,80 @@ Desktop exported at 85% size}</string>
 					</dict>
 					<key>Wrap</key>
 					<string>NO</string>
+				</dict>
+				<dict>
+					<key>Bounds</key>
+					<string>{{325, 478}, {150, 150}}</string>
+					<key>Class</key>
+					<string>ShapedGraphic</string>
+					<key>FontInfo</key>
+					<dict>
+						<key>Color</key>
+						<dict>
+							<key>b</key>
+							<string>0.662745</string>
+							<key>g</key>
+							<string>0.505882</string>
+							<key>r</key>
+							<string>0.376471</string>
+						</dict>
+						<key>Font</key>
+						<string>OpenSans-Bold</string>
+						<key>Size</key>
+						<real>12</real>
+					</dict>
+					<key>ID</key>
+					<integer>7</integer>
+					<key>Link</key>
+					<dict>
+						<key>documentJump</key>
+						<dict>
+							<key>Type</key>
+							<integer>6</integer>
+							<key>Worksheet</key>
+							<integer>0</integer>
+						</dict>
+					</dict>
+					<key>Shape</key>
+					<string>Circle</string>
+					<key>Style</key>
+					<dict>
+						<key>fill</key>
+						<dict>
+							<key>Color</key>
+							<dict>
+								<key>a</key>
+								<string>0.15</string>
+								<key>b</key>
+								<string>0.662745</string>
+								<key>g</key>
+								<string>0.505882</string>
+								<key>r</key>
+								<string>0.376471</string>
+							</dict>
+						</dict>
+						<key>shadow</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+						<key>stroke</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+					</dict>
+					<key>Text</key>
+					<dict>
+						<key>Text</key>
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 OpenSans;}
+{\colortbl;\red255\green255\blue255;\red96\green129\blue169;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\b\fs24 \cf2 Jump to\
+Wireframe 1}</string>
+					</dict>
 				</dict>
 			</array>
 			<key>GridInfo</key>
@@ -1036,9 +1132,11 @@ Desktop exported at 85% size}</string>
 	<key>WindowInfo</key>
 	<dict>
 		<key>CurrentSheet</key>
-		<integer>2</integer>
+		<integer>0</integer>
 		<key>ExpandedCanvases</key>
 		<array/>
+		<key>FitInWindow</key>
+		<true/>
 		<key>Frame</key>
 		<string>{{109, 110}, {1520, 1014}}</string>
 		<key>ListView</key>
@@ -1054,15 +1152,15 @@ Desktop exported at 85% size}</string>
 		<key>SidebarWidth</key>
 		<integer>182</integer>
 		<key>VisibleRegion</key>
-		<string>{{0, 0}, {1323, 860}}</string>
+		<string>{{0, 0}, {1323, 859}}</string>
 		<key>Zoom</key>
 		<real>1</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>
 				<string>1-desktop-landscape</string>
-				<real>1</real>
-				<real>5.1700000762939453</real>
+				<real>0.0</real>
+				<real>3.809999942779541</real>
 			</array>
 			<array>
 				<string>2-desktop-landscape</string>
