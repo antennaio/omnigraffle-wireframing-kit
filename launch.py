@@ -41,7 +41,7 @@ if not result:
 @app.context_processor
 def project_title():
     """Project title available in templates."""
-    return dict(project_title=config['General']['project'])
+    return dict(project_title=config['General']['project'].decode('utf-8'))
 
 
 @app.route('/', methods=['GET'])

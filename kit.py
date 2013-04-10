@@ -37,7 +37,7 @@ class WireframeSet(LinkSet):
             wireframe_id = c + 1
             w = self.config['Wireframes']['Wireframe ' + str(wireframe_id)]
             d = self.config['Devices']['Device ' + w['show_on_device']]
-            self.links.append(Link(wireframe_id, wireframe_id, w['title'], d['device'], d['orientation']))
+            self.links.append(Link(wireframe_id, wireframe_id, w['title'].decode('utf-8'), d['device'].decode('utf-8'), d['orientation'].decode('utf-8')))
 
 
 class DeviceSet(LinkSet):
@@ -51,7 +51,7 @@ class DeviceSet(LinkSet):
         for c in xrange(0, len(self.config['Devices'])):
             device_id = c + 1
             d = self.config['Devices']['Device ' + str(device_id)]
-            self.links.append(Link(device_id, None, d['title'], d['device'], d['orientation']))
+            self.links.append(Link(device_id, None, d['title'].decode('utf-8'), d['device'].decode('utf-8'), d['orientation'].decode('utf-8')))
 
     def get_id(self, device, orientation):
         for d in self.links:
