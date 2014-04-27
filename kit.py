@@ -28,7 +28,7 @@ class LinkSet(object):
 class WireframeSet(LinkSet):
     """A set of wireframes."""
 
-    def __init__(self, config):
+    def __init__(self, config, device, orientation):
         super(WireframeSet, self).__init__()
 
         self.config = config
@@ -36,8 +36,13 @@ class WireframeSet(LinkSet):
         for c in xrange(0, len(self.config['Wireframes'])):
             wireframe_id = c + 1
             w = self.config['Wireframes']['Wireframe ' + str(wireframe_id)]
-            d = self.config['Devices']['Device ' + w['show_on_device']]
-            self.links.append(Link(wireframe_id, wireframe_id, w['title'].decode('utf-8'), d['device'].decode('utf-8'), d['orientation'].decode('utf-8')))
+
+            if 'show_on_device' in w:
+                d = self.config['Devices']['Device ' + w['show_on_device']]
+                device = d['device'].decode('utf-8')
+                orientation = d['orientation'].decode('utf-8')
+
+            self.links.append(Link(wireframe_id, wireframe_id, w['title'].decode('utf-8'), device, orientation))
 
 
 class DeviceSet(LinkSet):

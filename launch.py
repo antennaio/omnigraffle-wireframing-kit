@@ -68,7 +68,7 @@ def show(wireframe_id, device, orientation):
     devices.set_page(wireframe_id)
     devices.active_id = devices.get_id(device, orientation)
 
-    wireframes = WireframeSet(config)
+    wireframes = WireframeSet(config, device, orientation)
     wireframes.active_id = wireframe_id
 
     return render_template('show.html', wireframes=wireframes, devices=devices, wireframe=wireframe)
