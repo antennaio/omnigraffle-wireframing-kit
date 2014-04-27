@@ -6,7 +6,7 @@ Omnigraffle Wireframing Kit helps to organize your wireframes into a slick prese
 Demo
 ----
 
-Go to [http://netboy.pl/demo/omnigraffle-wireframing-kit](http://netboy.pl/demo/omnigraffle-wireframing-kit) for a demo.
+Go to [http://antenna.io/demo/omnigraffle-wireframing-kit](http://antenna.io/demo/omnigraffle-wireframing-kit) for a demo.
 
 Installation
 ------------
@@ -21,7 +21,7 @@ virtualenv --no-site-packages wireframing-kit
 Clone and setup the kit:
 
 ```
-git clone https://github.com/netboy/omnigraffle-wireframing-kit.git
+git clone https://github.com/antennaio/omnigraffle-wireframing-kit.git
 cd omnigraffle-wireframing-kit
 pip install -r requirements.txt
 fab start
