@@ -6,7 +6,7 @@ Omnigraffle Wireframing Kit helps to organize your wireframes into a slick prese
 Demo
 ----
 
-Go to [http://antenna.io/demo/omnigraffle-wireframing-kit](http://antenna.io/demo/omnigraffle-wireframing-kit) for a demo.
+Go to [http://antenna.io/demo/omnigraffle-wireframing-kit/export](http://antenna.io/demo/omnigraffle-wireframing-kit/export) for a demo.
 
 Installation
 ------------
