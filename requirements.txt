@@ -1,5 +1,5 @@
 Fabric==1.4.3
-Flask==0.9
+Flask==1.0
 Jinja2==2.6
 Werkzeug==0.8.3
 configobj==4.7.2
